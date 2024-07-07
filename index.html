@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Rover</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid">
+      <!-- Grid will be generated here by JavaScript -->
+    </div>
+  </div>
+  <div class="controls">
+    <button onclick="turnLeft(rover)">Turn Left</button>
+    <button onclick="turnRight(rover)">Turn Right</button>
+    <button onclick="moveForward(rover)">Move Forward</button>
+    <button onclick="moveBackward(rover)">Move Backward</button>
+    <input type="text" id="commands" placeholder="Enter commands (L, R, F, B)">
+    <button onclick="executeCommands(rover, document.getElementById('commands').value)">Execute Commands</button>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
